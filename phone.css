@@ -1,0 +1,60 @@
+
+@media only screen and (max-width: 600px) {
+/* navagation */
+#navbar ul li a {
+    display: none;
+    font-size: 11px;
+}
+#navbar{
+    flex-direction: column;
+}           
+/* home section */
+#home{
+height: 370px;
+padding: 220px 20px 50px 20px!important;
+
+}
+#home::before{
+    height: 400px;
+}
+#home p{
+    font-size: 13px;
+}
+
+/* services section */
+#services{
+    flex-direction: column;
+    margin-top: 30px;
+}
+#services .box{
+    
+        /* border: 2px solid white; */
+        padding: 15px;
+        margin: 3px 6px;
+        border-radius: 23px;
+        background-color: #f7f7f7;
+        box-shadow: 2px 3px 14px #0000001f;
+        margin-top: 40PX!IMPORTANT;
+}
+
+/* clients section */
+#clients {
+    flex-direction: column;
+}
+/* contact section */
+
+/* footter */
+
+/* utility classes */
+.h-primary{
+    font-size: 26px;
+}}
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  
+{ #services{
+    display: flex;
+    flex-direction: column;
+}}

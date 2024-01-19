@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody Food.com</title>
+<link rel="stylesheet"  href="css/phone.css">    
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mina&family=Roboto+Slab:wght@400;500&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<style>
+    body{
+        margin: 0px;
+    }
+    /* Navagation Bar */
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+
+
+
+    }
+
+    section{
+        padding: 30px 20px;
+    }
+    /* navagation bar Logo and Img */
+    #logo {
+        margin: 10px 34px;
+    }
+
+    #logo img {
+        height: 71px;
+        margin: 3px 6px;
+    }
+
+
+    /* navagation bar list styling */
+
+    #navbar ul {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+
+    }
+
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 25px;
+    }
+
+    #navbar ul li a {
+        color: aliceblue;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+
+    }
+
+    #navbar ul li a:hover {
+        color: black;
+        background-color: aliceblue;
+    }
+
+    /* Home section */
+    #home {
+        display: flex;
+     background-image:url(background\ wall\ .jpg) ;
+     background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #0000008f;
+        flex-direction: column;
+        padding: 130px 200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    #home h1 {
+        font-family: 'Bree Serif', serif;
+
+        color: white;
+        text-align: center;
+
+    }
+
+    #home p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Bree Serif', serif;
+    }
+
+    /* services section */
+    #services {
+        
+        display: flex;
+
+    }
+
+    #services .box {
+        border: 2px solid #F7F7F7;
+        padding: 34px;
+        margin: 3px 6px;
+        border-radius: 23px;
+        background-color: #f7f7f7;
+        box-shadow: 2px 3px 14px #0000001f;
+    }
+
+    #services .box img {
+        height: 160px;
+        margin: auto;
+        display: block;
+    }
+
+    #services .box p {
+        font-family: 'Bree Serif', serif;
+    }
+
+    /* client section */
+    #client-section {
+
+background-image: url(BACKGROUND.jpg);
+background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #0000008f;
+    }
+   
+    .client-item{
+        padding: 34px;
+    }
+
+
+    #clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #clients img{
+        height: 120px;
+    }
+    /* contact section */
+    #contact{
+        position: relative;
+        background-image: url(contact.jpg);
+        background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #0000008f;
+    }
+    
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:34px ;
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+       
+    padding: 12px 5px;
+        border-radius: 9px;
+        font-size: 16px;
+        border: 1.5px solid black;
+    }
+        #contact-box label{
+        
+        font-size: 21px;
+        /* font-weight: bold; */
+        font-family: 'Bree Serif', serif;
+    }
+
+    
+    footer{
+        background-color: black;
+        color: aliceblue;
+        padding: 9px 20px;
+    }
+
+    /* /* utility class * */
+    .h-primary {
+        font-family: 'Bree Serif', serif;
+        font-size: 33px;
+        margin: 0;
+    padding: 0;
+    }
+
+    .h-secondary {
+        font-size: 25px;
+        font-family: 'Bree Serif', serif;
+        padding: 12px;
+    }
+
+    .btn {
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: brown;
+        color: white;
+        margin: 17px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .btn:hover {
+        background-color: darkred;
+    }
+
+    .center {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Main logo.png" alt="FoodyFood.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Service</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome To Foody Food</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptates!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn">
+            Order Now
+        </button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">
+            Our Services
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="IMG/pizza LOGO.png" alt="">
+                <h2 class="h-secondary center">Fast Food </h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias harum fugit ex
+                    ullam quibusdam quis quasi voluptatibus tempore rerum maxime ipsam in corporis, vel repellendus,
+                    ipsa voluptate praesentium provident sequi neque asperiores saepe iste.</p>
+            </div>
+
+            <div class="box">
+                <img src="IMG/plate logo.png" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias harum fugit ex
+                    ullam quibusdam quis quasi voluptatibus tempore rerum maxime ipsam in corporis, vel repellendus,
+                    ipsa voluptate praesentium provident sequi neque asperiores saepe iste.</p>
+            </div>
+
+            <div class="box">
+                <img src="IMG/deleivery .png" alt="">
+                <h2 class="h-secondary center">Delivery</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias harum fugit ex
+                    ullam quibusdam quis quasi voluptatibus tempore rerum maxime ipsam in corporis, vel repellendus,
+                    ipsa voluptate praesentium provident sequi neque asperiores saepe iste.</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="IMG/apple logo.png" alt="Our Client">
+            </div>
+
+            <div class="client-item">
+                <img src="IMG/hp logo.png" alt="Our Client">
+            </div>
+
+            <div class="client-item">
+                <img src="IMG/SKYPE LOGO.png" alt="Our Client">
+            </div>
+        </div>
+    
+</div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="text" name="name" id="Email" placeholder="Enter Your Email">
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="Phone">Phone Number</label>
+                    <input type="text" name="name" id="Phone" placeholder="Enter Your Number">
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="Address">Address</label>
+                    <input type="text" name="name" id="Address" placeholder="Enter Your Address">
+                    
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+           Copyright &copy;www.foodyfood.com. All right reserved!
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variable */
+:root{
+    --navbar-height: 59px;
+}
+
+ /* Navagation Bar */
+ #navbar{
+    display: flex;
+ }
+#contact-box{
+    color:white
+     ;
+}
+
+
